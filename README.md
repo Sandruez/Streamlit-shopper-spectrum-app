@@ -1,4 +1,4 @@
-✅✨ Conclusion
+✅✨ Streamlit-shopper-spectrum-app -Project description :-
 🚀 This project delivers a powerful, end-to-end Streamlit web application designed to solve two key retail challenges:
 
 🎯 Customer Segmentation based on RFM (Recency, Frequency, Monetary) analysis using KMeans Clustering
