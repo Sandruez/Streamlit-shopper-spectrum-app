@@ -22,7 +22,7 @@ High-Value 💎, Regular 😊, Occasional 🕓, or At-Risk ⚠️
 
 🧊 joblib for model persistence
 
-🌐 Streamlit for real-time web interaction
+🌐 Streamlit for real-time web interaction 
 
 📁 GitHub for version control and deployment
 
