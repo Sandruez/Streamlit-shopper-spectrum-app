@@ -2,10 +2,14 @@ import streamlit as st
 import joblib
 import numpy as np
 import pandas as pd
+import warnings
+import warnings
 
-import matplotlib
-import seaborn
-import plotly
+# Suppress scikit-learn version mismatch warnings during unpickling
+warnings.filterwarnings(
+    "ignore",
+    message=r"Trying to unpickle estimator .* from version .* when using version .*",
+)
 
 # Load Models & Data
 try:
@@ -70,10 +74,8 @@ with tab2:
                 2: "High-Value 🟢",
                 3: "High-Value 🟢"
             }
-
-
             st.success(f"✅ **Segment:** {cluster_labels.get(cluster, 'Unknown')} (Cluster {cluster})")
             st.success(f"✅ **This customer belongs to:** {cluster_labels.get(cluster, 'Unknown')} Shopper")
-           
+
         except Exception as e:
             st.error(f"❌ Prediction failed: {str(e)}")
